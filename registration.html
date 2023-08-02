@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <title>Registration</title>
+        <style>
+            body{
+                background-image:url(image1.jpg);
+            }
+        
+            .registeration{
+        
+                
+                
+                text-align: center;
+                
+        
+            
+
+            }
+            p{
+                color: red;
+            }
+            .quit{
+                border: none;
+                background-color:goldenrod ;
+                float:right;
+                
+            }
+            .register{
+                border: none;
+                background-color: goldenrod;
+                float:right;
+
+            }
+            h1{ 
+
+                text-align: center;
+                color:rgb(19, 29, 212)
+            }
+
+            input{
+                border-radius: 10px;
+                text-align: center;
+
+            }
+            select{
+                border-radius: 10px;
+                text-align: center;
+            }
+            
+            button{
+                padding: 2px;
+                border-radius: 20px;
+                
+            }
+        
+            </style>
+
+            <script>
+                function my(form){
+                    var myusername=form.username.value;
+                    var mypassword=form.password.value;
+                    var mysecurityanswer=form.securityanswer.value;
+                    var myfirstname=form.firstname.value;
+                    var mylastname=form.lastname.value;
+                    var mymaragestatus=form.maragestatus.value;
+                    var mydate=form.date.value;
+                    var mynationality=form.nationality.value;
+                    var mygender=form.gender.value;
+                    var myemail=form.email.value;
+                    var mymobile=form.mobile.value;
+                    var mynationality=form.nationality.value;
+
+    if(myusername.length===0)
+    {
+        alert("Enter username......")
+    }
+        return false;
+    
+    if(myusername.length===0)
+    {
+        alert("Enter password......")
+
+    }
+    return false;
+    if(mysecurityanswer.length===0)
+    {
+        alert("Enter security answer......")
+
+    }
+    return false;
+    if(myfirstname.length===0){
+        alert("Enter first name......")
+
+    }
+    return false;
+    if(mylastname.length===0){
+        alert("Enter last name name......")
+
+    }
+    return false;
+
+
+
+    
+    
+                }
+                </script>
+        
+    </head>
+    <body>
+        <div class="registeration">
+        <h1>Registration Page</h1>
+        <form action="registrationsucess.html" onsubmit="return my(this)">
+
+        <h2 style="text-align: center; color:black">Basic Details</h2>
+        <input type="text" name="username" placeholder="User Name" size="25"><br><br>
+        <input type="password" name="password" placeholder="Password" size="25"><br><br>
+        <input type="password" name="password" placeholder="Conform Password" size="25"><br><br>
+        <select name="preferedlanguage">
+            <option value="preferedlanguage">Prefered Language</option>
+            <option value="preferedlanguage">urdu</option>
+            <option value="preferedlanguage">English</option>
+            <option value="preferedlanguage">Telugu</option>
+            <option value="preferedlanguage">Hindi</option>
+
+        </select><br><br>
+        <select name="securityquestion">
+            <option value="securityquestion">Security Question</option>
+            <option value="securityquestion">What is your pet name</option>
+            <option value="securityquestion">what is your school name</option>
+            <option value="securityquestion">What is your favroute colour</option>
+            <option value="securityquestion">What is your favroute fruit</option></h3>
+
+
+        </select><br><br>
+        <input type="text" name="securityanswer" placeholder="Security Answer"><br><br>
+
+   
+
+    <h2>Personal Details</h2>
+    
+    <input type="text" name="firstname" placeholder="First Name">
+<input type="text" name="middlename" placeholder="Middle Name">
+<input type="text" name="lastname" placeholder="Last Name">
+<br><p>Info!Plese provide your exact name as per Aadhar to avail Aadhar based benifits on IRCTC eTicketing website.</p>
+<br>
+<select name="selectocupation">
+    <option name="business">Business</option>
+    <option name="privatejob">Private Job</option>
+    <option name="governmentjob">Government Job</option>
+
+</select>
+<br><br>
+<input type="radio" name="maragestatus">Married
+<input type="radio" name="maragestatus">Unmarried
+<input type="date" name="date" >Date Of Birth
+<select name="residential">
+    <option name="india">India</option>
+    <option name="usa">USA</option>
+    <option name="africa">Africa</option>
+
+</select><br><br>
+<input type="radio" name="gender">Male
+<input type="radio" name="gender">Female
+<input type="radio" name="gender">Transgender
+<input type="email" placeholder="email"><br>
+<br>
+<select name="mobile">
+    <option name="num">91</option>
+
+
+</select>
+<input type="mobile" placeholder="mobile">
+<select name="nationality">
+    <option name="nationality">Select a Nationality</option>
+    <option name="india">Indian</option>
+    <option name="american">American</option>
+    <option name="african">african</option>
+    
+
+</select><br><br>
+<input type="submit" calss="submit">
+</form>
+
+<a href="login.html">
+    <button name="back">Back</button>
+</a>
+</div>
+
+    </body>
+</html>
